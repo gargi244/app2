@@ -1,0 +1,204 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" height="100%">
+
+
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="Employee Details">	
+					
+			
+				
+					
+					
+
+ 
+
+				<content> 
+ 
+
+				    <IconTabBar id="idIconTabBarMulti" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter icon="sap-icon://hint" text="Personel Info" id="hey">
+			
+				<content>
+         <Label text="Text" labelFor="inputText"/><Input id="inputText" type="Text" class="sapUiSmallMarginBottom" placeholder="Enter Text ..." fieldWidth="25%" width="100%"/>
+
+    <Label text="Email" labelFor="inputEmail"/>
+  <Input id="inputEmail" type="Email" class="sapUiSmallMarginBottom" placeholder="Enter Email ..."/>
+
+  <Label text="Telephone" labelFor="inputTel"/>
+  <Input id="inputTel" type="Tel" class="sapUiSmallMarginBottom" placeholder="Enter Telephone Number ..."/>
+
+  <Label text="Number" labelFor="inputNumber"/>
+  <Input id="inputNumber" type="Number" class="sapUiSmallMarginBottom" placeholder="Enter a Number ..."/>
+
+  <Label text="Code" labelFor="inputUrl"/>
+  <ActionSelect id="select0"/>
+   
+				</content>
+			</IconTabFilter><IconTabFilter icon="sap-icon://attachment" text="Core Skills">
+				<content>
+					
+					
+					
+				</content>
+			
+			</IconTabFilter>
+			<IconTabFilter icon="sap-icon://notes" text="language">
+				
+				<content>
+			
+					<VBox width="100%" direction="Column" id="vbox0">
+	        <items>
+	            
+	            
+	        
+	            <CheckBox xmlns="sap.m" text="C" selected="false" id="box6"/>
+	            <CheckBox xmlns="sap.m" text="C++" selected="false" id="box2"/>
+	            <CheckBox xmlns="sap.m" text="Java" selected="false" id="box5"/>
+	            <CheckBox xmlns="sap.m" text="Python" selected="false" id="box3"/>
+	            <CheckBox xmlns="sap.m" text="ABAP" selected="false" id="box4"/>
+	            <Button xmlns="sap.m" text="Submit" id="button2"/>
+	        </items>
+	    </VBox>
+				</content>
+			</IconTabFilter>
+		
+		</items>
+	
+	<content>
+	
+	    <Table noDataText="Drop column list items here and columns in the area above" id="table0">
+	
+	        <items>
+	
+	            <ColumnListItem type="Active" id="item0">
+	
+	                <cells>
+	
+	                    <Text text="Java" id="text"/>
+	
+	                    <Text text="Begineer" id="text0"/>
+	
+	                   </cells>
+	                    
+	                  
+	                 
+	                    
+	                  
+	
+	            </ColumnListItem>
+	            
+	            <ColumnListItem type="Active" id="item2">
+	
+	                <cells>
+	
+	                    <Text text="Python" id="text1"/>
+	
+	                    <Text text="Begineer" id="text2"/>
+	
+	                   </cells>
+	                    
+	                  
+	                 
+	                    
+	                  
+	
+	            </ColumnListItem>
+	            
+	            <ColumnListItem type="Active" id="item3">
+	
+	                <cells>
+	
+	                    <Text text="Abap" id="text3"/>
+	
+	                    <Text text="Advance" id="text4"/>
+	
+	                   </cells>
+	                    
+	                  
+	                 
+	                    
+	                  
+	
+	            </ColumnListItem>
+	            
+	            <ColumnListItem type="Active" id="item4">
+	
+	                <cells>
+	
+	                    <Text text="C++" id="text5"/>
+	
+	                    <Text text="Begineer" id="text6"/>
+	
+	                   </cells>
+	                    
+	                  
+	                 
+	                    
+	                  
+	
+	            </ColumnListItem>
+	            
+	            <ColumnListItem type="Active" id="item5">
+	
+	                <cells>
+	
+	                    <Text text="R" id="text7"/>
+	
+	                    <Text text="Begineer" id="text8"/>
+	
+	                   </cells>
+	                    
+	                  
+	                 
+	                    
+	                  
+	
+	            </ColumnListItem>
+	            
+	          
+	
+	        </items>
+	
+	        <columns>
+	
+	            <Column id="column0">
+	
+	                <header>
+	
+	                    <Label text="Skills" id="label5"/>
+	
+	                </header>
+	
+	            </Column>
+	
+	            <Column id="column1">
+	
+	                <header>
+	
+	                    <Label text="Level" id="label6"/>
+	
+	                </header>
+	
+	            </Column></columns></Table>
+	
+	</content>
+	
+	</IconTabBar> 
+ 
+
+				</content> 
+ 
+<footer>
+<Toolbar>
+<ToolbarSpacer/> 
+<Button text="Save" type="Accept"/>
+<Button text="Cancel" type="Reject"/>
+</Toolbar>
+</footer> 
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
